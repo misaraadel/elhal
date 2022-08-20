@@ -1,0 +1,86 @@
+@media (max-width: 999px) {
+  .navabr {
+    .top-nav {
+      display: none !important;
+    }
+
+    .bottom-nav {
+      .hamburger {
+        display: block !important;
+      }
+
+      .nav-contain {
+        width: 100% !important;
+        position: absolute;
+        top: 120px;
+        left: -100%;
+        padding: 20px 15px;
+        height: calc(100% - 120px);
+        background-color: var(--light);
+        z-index: 999;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        transition: all .3s linear;
+
+        &.active-nav {
+          left: 0px !important;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          background: url('../images/logo/logo.png') center / contain no-repeat;
+          bottom: 40px;
+          right: 40px;
+          opacity: .4;
+        }
+
+        .navbar-nav {
+          flex-direction: column !important;
+          align-items: flex-start;
+          width: 100%;
+
+          li {
+            margin-bottom: 10px;
+          }
+        }
+
+        .custom-btn {
+          margin-top: 20px;
+        }
+      }
+
+    }
+  }
+
+  .about-us {
+    .image-content {
+      height: 300px !important;
+    }
+
+    h1, span  {
+      font-size: 25px !important;
+    }
+  }
+
+  .advantages {
+    h1, span {
+      font-size: 20px !important;
+    }
+  }
+
+  html[dir="rtl"] {
+    .navabr .bottom-nav .content .nav-contain {
+      left: unset !important;
+      right: -100%;
+
+      &.active-nav {
+        right: 0px !important;
+        left: unset !important;
+      }
+    }
+  }
+}

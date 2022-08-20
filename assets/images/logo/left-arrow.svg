@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/rounded/navigation/arrow_forward_24px_rounded</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About-Us" transform="translate(-1242.000000, -1734.000000)" fill="#00869B">
+            <g id="footer-copy" transform="translate(0.000000, 1658.000000)">
+                <g id="Group-3-Copy-2" transform="translate(1020.000000, 32.000000)">
+                    <g id="Input-/-Primary-/-Default" transform="translate(0.000000, 31.000000)">
+                        <g id="Group-5" transform="translate(219.000000, 10.000000)">
+                            <g id="icon/rounded/navigation/arrow_forward_24px" transform="translate(3.000000, 3.000000)">
+                                <path d="M3.9065625,9.7499946 L12.2840625,9.7499946 L8.6240625,13.4099946 C8.3315625,13.7024946 8.3315625,14.1824946 8.6240625,14.4749946 C8.9165625,14.7674946 9.3890625,14.7674946 9.6815625,14.4749946 L14.6240625,9.5324946 C14.9165625,9.2399946 14.9165625,8.7674946 14.6240625,8.4749946 L9.6890625,3.5249946 C9.54893886,3.3845551 9.35870073,3.3056304 9.1603125,3.3056304 C8.96192427,3.3056304 8.77168614,3.3845551 8.6315625,3.5249946 C8.3390625,3.8174946 8.3390625,4.2899946 8.6315625,4.5824946 L12.2840625,8.2499946 L3.9065625,8.2499946 C3.4940625,8.2499946 3.1565625,8.5874946 3.1565625,8.9999946 C3.1565625,9.4124946 3.4940625,9.7499946 3.9065625,9.7499946 Z" id="icon/navigation/arrow_forward_24px"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
