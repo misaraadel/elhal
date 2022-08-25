@@ -54,6 +54,10 @@
       }
 
     }
+
+    .drop-list-shape .list {
+      left: 0px;
+    }
   }
 
   .about-us {
@@ -81,6 +85,10 @@
         right: 0px !important;
         left: unset !important;
       }
+    }
+
+    .navabr .drop-list-shape .list {
+      right: 0px;
     }
   }
 }

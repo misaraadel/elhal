@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/rounded/social/notifications_24px</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Add-Dental-Clinic-Info-&amp;-Add-Timetable-1" transform="translate(-1164.000000, -72.000000)" fill="#00768C">
+            <g id="Header/Main-Menu" transform="translate(0.000000, 44.000000)">
+                <g id="Group-2" transform="translate(1159.000000, 23.000000)">
+                    <g id="icon/rounded/social/notifications_24px" transform="translate(5.000000, 5.000000)">
+                        <path d="M12.0012328,21.75 C13.1012328,21.75 14.0012328,20.85 14.0012328,19.75 L10.0012328,19.75 C10.0012328,20.85 10.8912328,21.75 12.0012328,21.75 Z M18.0012328,15.75 L18.0012328,10.75 C18.0012328,7.68 16.3612328,5.11 13.5012328,4.43 L13.5012328,3.75 C13.5012328,2.92 12.8312328,2.25 12.0012328,2.25 C11.1712328,2.25 10.5012328,2.92 10.5012328,3.75 L10.5012328,4.43 C7.63123277,5.11 6.00123277,7.67 6.00123277,10.75 L6.00123277,15.75 L4.71123277,17.04 C4.08123277,17.67 4.52123277,18.75 5.41123277,18.75 L18.5812328,18.75 C19.4712328,18.75 19.9212328,17.67 19.2912328,17.04 L18.0012328,15.75 Z" id="icon/social/notifications_24px"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

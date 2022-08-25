@@ -26,6 +26,10 @@ $(document).ready(function () {
         $('body').toggleClass('overflowNone')
     });
 
+    $('.select-data .data-selected').click(function(){
+        $('.select-data').toggleClass('active');
+    });
+
     $('.owl-doctors').owlCarousel({
         rtl: true,
         loop:true,
