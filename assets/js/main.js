@@ -60,4 +60,35 @@ $(document).ready(function () {
             }
         }
     });
+
+    $('.owl-header').owlCarousel({
+        rtl: true,
+        loop:true,
+        margin: 20,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        touchDrag  : true,
+		mouseDrag  : true,
+		autoWidth: false,
+		animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        autoplayTimeout: 6000,
+		smartSpeed: 2000,
+		dragEndSpeed: 2000,
+		slidSpeed: 900,
+        paginationSpeed: 900,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
 });

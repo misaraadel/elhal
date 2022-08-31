@@ -12,10 +12,10 @@
       .nav-contain {
         width: 100% !important;
         position: absolute;
-        top: 120px;
+        top: 80px;
         left: -100%;
         padding: 20px 15px;
-        height: calc(100% - 120px);
+        height: calc(100% - 80px);
         background-color: var(--light);
         z-index: 999;
         flex-direction: column !important;
@@ -76,6 +76,23 @@
     }
   }
 
+  .profile .nav.nav-tabs {
+    flex-wrap: nowrap !important;
+    overflow-x: scroll !important;
+    justify-content: flex-start !important;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar,
+    &::-webkit-scrollbar-thumb {
+      width: 10px !important;
+      height: 0px !important;
+    }
+
+    li {
+      min-width: 170px !important;
+    }
+  }
+
   html[dir="rtl"] {
     .navabr .bottom-nav .content .nav-contain {
       left: unset !important;
@@ -90,5 +107,84 @@
     .navabr .drop-list-shape .list {
       right: 0px;
     }
+  }
+
+  .profile .form-contain {
+    padding: 20px 12px !important;
+  }
+
+  .order-box .disease-data  {
+    margin-bottom: 20px;
+    flex-direction: column;
+
+    h2, .disease-list {
+      width: 100%;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+  }
+
+  .table-responsive {
+    width: 100%;
+    overflow-x: scroll !important;
+
+    th, td {
+      min-width: 200px !important;
+    }
+  }
+
+  .join-us {
+    padding-bottom: 40px;
+
+    .image-content {
+      margin-bottom: 20px;
+      height: 400px;
+    }
+  }
+
+  .graph-heading {
+    width: 100% !important;
+
+    h1 {
+      font-size: 41px !important;
+    }
+  }
+
+  header {
+    padding: 50px 0px;
+  }
+
+  .profile .form-contain .button-confirm {
+    justify-content: center;
+
+    .custom-btn {
+      margin: 0px 5px !important;
+      width: 45% !important;
+    }
+  }
+
+  .profile .profile-list {
+    display: none;
+  }
+
+  .profile .profile-heading {
+    margin-bottom: 0px !important;
+    padding-bottom: 10px !important;
+
+    h1 {
+      margin: 0px !important;
+    }
+    .bread-list {
+      display: none;
+    }
+  }
+  .general-section {
+    padding: 10px 0px;
+  }
+
+  .profile .nav.nav-tabs {
+    margin-bottom: 10px !important;
   }
 }
