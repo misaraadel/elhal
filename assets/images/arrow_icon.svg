@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Public-Profile--My-Services" transform="translate(-1096.000000, -443.000000)" fill="#FFFFFF">
+            <g id="Group-6" transform="translate(307.000000, 47.000000)">
+                <g id="Group-13" transform="translate(24.000000, 390.000000)">
+                    <g id="Group-12" transform="translate(759.000000, 0.000000)">
+                        <g id="icon" transform="translate(6.000000, 6.000000)">
+                            <path d="M6.99812983,21.015 C7.48812983,21.505 8.27812983,21.505 8.76812983,21.015 L17.0781298,12.705 C17.4681298,12.315 17.4681298,11.685 17.0781298,11.295 L8.76812983,2.985 C8.27812983,2.495 7.48812983,2.495 6.99812983,2.985 C6.50812983,3.475 6.50812983,4.265 6.99812983,4.755 L14.2381298,12.005 L6.98812983,19.255 C6.50812983,19.735 6.50812983,20.535 6.99812983,21.015 Z" id="icon/navigation/arrow_forward_ios_24px"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

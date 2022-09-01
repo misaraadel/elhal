@@ -89,7 +89,12 @@
     }
 
     li {
-      min-width: 170px !important;
+      min-width: 180px !important;
+
+      span {
+        font-size: 12px !important;
+        font-weight: 500 !important;
+      }
     }
   }
 
@@ -186,5 +191,18 @@
 
   .profile .nav.nav-tabs {
     margin-bottom: 10px !important;
+  }
+
+  .profile-service-data .heading-profile {
+    flex-direction: column !important;
+
+    .contain {
+      width: 100% !important;
+      margin-top: 20px;
+    }
+  }
+
+  .custom-btn span {
+    font-size: 12px !important;
   }
 }
