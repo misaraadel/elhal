@@ -119,3 +119,14 @@ $(document).ready(function () {
     };
 
 });
+
+$(document).ready(function() {
+    $(".show_hide_password .show_pass").on('click', function(event) {
+        event.preventDefault();
+        if($(this).siblings("input").attr("type") == "text"){
+            $(this).siblings("input").attr('type', 'password');
+        }else if($(this).siblings("input").attr("type") == "password"){
+            $(this).siblings("input").attr('type', 'text');
+        }
+    });
+}); 
