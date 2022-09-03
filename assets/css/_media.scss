@@ -1,7 +1,14 @@
 @media (max-width: 999px) {
   .navabr {
-    .top-nav {
-      display: none !important;
+    .top-nav .content .socail-media li:first-child {
+      display: none;
+    }
+
+    &.scrolled {
+      .nav-contain {
+        top: 80px !important;
+        height: calc(100vh - 80px) !important;
+      }
     }
 
     .bottom-nav {
@@ -12,11 +19,12 @@
       .nav-contain {
         width: 100% !important;
         position: absolute;
-        top: 80px;
+        top: 115px;
         left: -100%;
         padding: 20px 15px;
-        height: calc(100% - 80px);
-        background-color: var(--light);
+        padding-inline-start: 15px !important;
+        height: calc(100vh - 115px);
+        background-color: var(--light) !important;
         z-index: 999;
         flex-direction: column !important;
         justify-content: flex-start !important;
@@ -158,7 +166,7 @@
   }
 
   header {
-    padding: 50px 0px;
+    padding: 200px 0px 50px !important;
   }
 
   .profile .form-contain .button-confirm {
@@ -186,7 +194,7 @@
     }
   }
   .general-section {
-    padding: 10px 0px;
+    padding-bottom: 10px !important;
   }
 
   .profile .nav.nav-tabs {

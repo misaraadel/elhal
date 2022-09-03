@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     $(function () {
         $(document).scroll(function () {
-            var $nav = $(".navbar");
+            var $nav = $(".navabr");
             $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
         });
     });
