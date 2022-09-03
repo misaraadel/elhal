@@ -194,7 +194,7 @@ html[dir="rtl"] {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 997;
 
   &.scrolled {
     .top-nav {
@@ -206,7 +206,7 @@ html[dir="rtl"] {
     width: 100%;
     padding: 12px 0px;
     position: relative;
-    z-index: 999;
+    z-index: 995;
     background-color: var(--primary-color);
 
     .content {
@@ -1261,7 +1261,7 @@ header {
 
 footer {
   width: 100%;
-  padding: 50px 0px 10px;
+  padding: 10px 0px 10px;
   background-color: #05313d;
 
   .contain {
@@ -1404,10 +1404,7 @@ footer {
 
   .copyright {
     width: 100%;
-    padding-top: 10px;
-    border-top: 1px solid #83b7c5;
     text-align: center;
-    margin-top: 50px;
 
     p {
       color: var(--light);
@@ -1416,6 +1413,15 @@ footer {
       margin: 0px;
     }
   }
+}
+
+.filter-icon {
+  display: none;
+}
+
+.mobile-appear,
+.form-popup  {
+  display: none !important;
 }
 
 .profile {
@@ -1608,6 +1614,7 @@ footer {
       align-items: center;
       align-content: center;
       justify-content: space-between;
+      padding: 0px 16px;
 
       .custom-btn {
         width: 49% !important;
@@ -1694,7 +1701,7 @@ footer {
     align-content: center;
     justify-content: space-between;
     margin-bottom: 20px;
-    border-bottom: 1px solid #808080;
+    border-bottom: 1px solid rgba($color: #808080, $alpha: 0.5);
     z-index: 9;
 
     .nav-item {
@@ -1710,15 +1717,16 @@ footer {
         width: 100%;
         border: 0px;
         z-index: 9;
+        margin: 0px;
         padding: 0px 0px 10px;
 
         &::after {
           content: '';
           position: absolute;
           width: 0%;
-          height: 1px;
+          height: 3px;
           background-color: var(--secondary-color);
-          bottom: -1px;
+          bottom: -2px;
           left: 0;
           z-index: -1;
           transition: all .3s linear;
@@ -1816,6 +1824,9 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px dashed #e2dfdf;
     align-content: center;
     justify-content: space-between;
 
@@ -1839,8 +1850,8 @@ footer {
     .certifcate-data {
       width: calc(100% - 70px);
       display: flex;
-      align-items: center;
-      align-content: center;
+      align-items: flex-start;
+      align-content: flex-start;
       justify-content: space-between;
 
       .contain {
@@ -1888,6 +1899,88 @@ footer {
             }
           }
         }
+      }
+    }
+
+    .more-details {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      cursor: pointer;
+      background-color: rgba($color: #000000, $alpha: 0.10);
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      position: relative;
+      z-index: 9;
+
+      img {
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+      }
+    }
+
+    .show-more {
+      position: relative;
+      z-index: unset !important;
+
+      .more-info {
+        width: 120px;
+        padding: 20px 10px;
+        box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.05);
+        border-radius: 10px;
+        position: absolute;
+        background-color: var(--light);
+        top: 100%;
+        right: 0px;
+        transform: translateY(30px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s linear;
+
+        a {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          align-content: center;
+
+          img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+            margin-inline-end: 10px;
+          }
+
+          span {
+            font-size: 15px;
+            font-weight: 500;
+          }
+          
+          &:nth-child(1) {
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+
+            span {
+              color: var(--secondary-color);
+            }
+          }
+
+          &:last-child {
+            span {
+              color: #e02020;
+            }
+          }
+        }
+      }
+
+      &:hover .more-info {
+        z-index: 999;
+        transform: translateY(0px);
+        opacity: 1;
+        visibility: visible;
       }
     }
   }
@@ -2237,7 +2330,6 @@ footer {
   .select-data {
     width: 100%;
     position: relative;
-    z-index: 999;
 
     .data-selected {
       width: 100%;
@@ -2278,8 +2370,7 @@ footer {
       padding: 24px;
       box-shadow: 0px 0px 6px rgba($color: #000000, $alpha: 0.150);
       transform: translateY(20px);
-      visibility: hidden;
-      opacity: 0;
+      display: none;
       transition: all .3s linear;
 
       .data-contain {
@@ -2305,7 +2396,9 @@ footer {
       }
     }
 
-    &:hover {
+    &.active {
+      z-index: 9999 !important;
+
       .data-selected {
         color: var(--secondary-color);
 
@@ -2316,8 +2409,7 @@ footer {
 
       .select-contain {
         transform: translateY(0px);
-        opacity: 1;
-        visibility: visible
+        display: block;
       }
     }
   }
@@ -2373,7 +2465,7 @@ footer {
 
   .search-box {
     width: 100%;
-    height: 50px;
+    height: 40px;
     display: flex;
     align-items: center;
     align-content: center;
@@ -2535,7 +2627,7 @@ footer {
   }
 
   .select-data {
-    z-index: 999;
+    z-index: 995;
 
     &.second-select-data {
       z-index: 998 !important;
@@ -2706,6 +2798,7 @@ footer {
       align-items: center;
       align-content: center;
       justify-content: space-between;
+      margin-bottom: 0px !important;
 
       .location {
         display: flex;
@@ -3202,8 +3295,8 @@ footer {
       width: calc(100% - 30px);
 
       img {
-        width: 20px;
-        height: 20px;
+        width: 35px;
+        height: 35px;
         object-fit: contain;
         margin-inline-end: 10px;
         filter: var(--primary-filter);
@@ -3238,13 +3331,16 @@ footer {
     align-content: center;
     justify-content: flex-start;
     flex-wrap: wrap;
+    padding: 0px 5px;
 
     li {
+      width: 100%;
       margin-inline-end: 12px;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       display: flex;
       align-items: center;
       align-content: center;
+      justify-content: space-between;
 
       &:last-child {
         margin-inline-end: 0px;
@@ -3607,11 +3703,11 @@ footer {
       align-items: center;
       align-content: center;
       justify-content: center;
-      border: 1px solid var(--dark-pragraph);
+      border: 1px solid #7c8495;
       border-radius: 10px;
 
       span {
-        color: var(--dark-pragraph);
+        color: #7c8495;
         font-size: 15px;
         font-weight: 500;
         margin-inline-end: 7px
@@ -3626,14 +3722,14 @@ footer {
         align-content: center;
         justify-content: center;
         border-radius: 10px;
-        background-color: var(--dark-pragraph);
+        background-color: #7c8495;
         color: var(--light);
         font-size: 14px;
         font-weight: 500;
       }
 
       &.active {
-        background-color: var(--dark-pragraph);
+        background-color: #7c8495;
         
         span {
           color: var(--light);
@@ -3641,7 +3737,7 @@ footer {
 
         .number {
           background-color: var(--light);
-          color: var(--dark-pragraph)
+          color: #7c8495
         }
       }
     }
@@ -3691,8 +3787,8 @@ footer {
     align-items: center;
     align-content: center;
     justify-content: space-between;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
     border-bottom: 1px solid rgba($color: #000000, $alpha: 0.10);
 
     .image-content {
@@ -3719,6 +3815,7 @@ footer {
         align-items: flex-start;
         align-content: flex-start;
         justify-content: space-between;
+        margin: 0px !important;
 
         .contain {
           .bold-text {
@@ -3732,14 +3829,13 @@ footer {
             font-size: 30px;
             font-weight: 500;
             color: var(--secondary-color);
-            margin: 16px 0px;
           }
 
           .desc-data {
             color: var(--secondary-color);
             font-size: 16px;
             font-weight: 500;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
           }
         }
       }
@@ -3859,6 +3955,7 @@ footer {
   img {
     width: 24px;
     height: 24px;
+    background-color: #f3f6fa;
     object-fit: contain;
     margin-inline-end: 10px;
   }

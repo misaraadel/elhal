@@ -97,7 +97,7 @@
     }
 
     li {
-      min-width: 180px !important;
+      min-width: 84px !important;
 
       span {
         font-size: 12px !important;
@@ -184,6 +184,7 @@
 
   .profile .profile-heading {
     margin-bottom: 0px !important;
+    border: 0px !important;
     padding-bottom: 10px !important;
 
     h1 {
@@ -193,8 +194,9 @@
       display: none;
     }
   }
+
   .general-section {
-    padding-bottom: 10px !important;
+    padding-bottom: 20px !important;
   }
 
   .profile .nav.nav-tabs {
@@ -212,5 +214,163 @@
 
   .custom-btn span {
     font-size: 12px !important;
+  }
+
+  .sub-header {
+    padding: 145px 0px 21px;
+
+    .bread-list {
+      display: none !important;
+    }
+  }
+
+  .form-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    display: block !important;
+    transition: all .3s linear;
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .3s linear;
+    }
+
+    .form-contain-row {
+      width: 95%;
+      border-radius: 20px 20px 0px 0px;
+      padding: 10px 16px 0px;
+      background-color: var(--light);
+      margin: 0px auto !important;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateY(30px) translateX(-50%);
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .3s linear;
+    }
+
+    .heading h1 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--secondary-color);
+      text-align: center;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+
+    .custom-btn {
+      img {
+        filter: invert(99%) sepia(1%) saturate(7477%) hue-rotate(184deg) brightness(111%) contrast(100%);
+      }
+
+      span {
+        font-size: 20px !important;
+      }
+    }
+
+    &.active-form {
+      opacity: 1;
+      visibility: visible;
+
+      .overlay {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .form-contain-row {
+        transform: translateY(0px) translateX(-50%);
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  .mobile-none {
+    display: none;
+  }
+  .mobile-appear {
+    display: flex !important;
+  }
+  
+
+  .flex-heading {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+
+    .heading {
+      margin-bottom: 0px;
+    }
+
+    .filter-icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      border-radius: 10px;
+      background-color: var(--secondary-color);
+
+      img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        filter: invert(99%) sepia(1%) saturate(7477%) hue-rotate(184deg) brightness(111%) contrast(100%);
+      }
+    }
+  }
+
+  .sub-header .content h1,
+  .heading h1 {
+    font-size: 20px !important;
+    margin: 0px !important;
+  }
+
+  .general-section {
+    padding-top: 13px !important;
+  }
+
+  footer .copyright p {
+    font-size: 12px !important;
+  }
+
+  .profile {
+    padding-top: 150px !important;
+  }
+
+  .profile .custom-btn.big-btn {
+    width: 100% !important;
+  }
+
+  .no-padding {
+    padding: 0px !important;
+    margin-top: 10px !important;
+
+    .custom-btn {
+      width: 49% !important;
+      margin: 0px !important;
+    }
+  }
+
+  .profile .custom-btn.big-btn {
+    margin-top: 15px !important;
   }
 }

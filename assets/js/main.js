@@ -26,9 +26,26 @@ $(document).ready(function () {
         $('body').toggleClass('overflowNone')
     });
 
-    $('.select-data .data-selected').click(function(){
-        $('.select-data').toggleClass('active');
+    // $('.disease').click(function(){
+    //     $('.select-data').toggleClass('active');
+    // });
+
+    // $('.big-services').click(function(){
+    //     $('.select-data').toggleClass('active');
+    // });
+
+    // $('.maxillary').click(function(){
+    //     $('.select-data').toggleClass('active');
+    // });
+
+    $('.filter-icon').click(function(){
+        $('.form-popup').addClass('active-form');
     });
+
+    $('.form-popup .overlay').click(function(){
+        $('.form-popup').removeClass('active-form');
+    });
+
 
     $('.owl-doctors').owlCarousel({
         rtl: true,
@@ -91,4 +108,14 @@ $(document).ready(function () {
             }
         }
     });
+
+    var btns = document.getElementsByClassName("select-data");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    };
+
 });

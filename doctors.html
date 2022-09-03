@@ -487,15 +487,21 @@
 
       <section class="doctors form-contain general-section">
         <div class="container">
-          <div class="heading">
-            <h1>
-              Doctors (20)
-            </h1>
-          </div>
+          <div class="flex-heading mb-3">
+            <div class="heading">
+              <h1>
+                Doctors (20)
+              </h1>
+            </div>
 
-          <form class="form-contain mb-4">
-            <div class="row">
-              <div class="col-lg-12 col-12 mb-2 mx-auto">
+            <a href="#" class="filter-icon">
+              <img src="assets/images/filter.svg" alt="">
+            </a>
+          </div>
+          <form class="form-contain mobile-none mb-4">
+            <div class="overlay"></div>
+            <div class="row form-contain-row">
+              <div class="col-lg-9 col-12 mb-3  mx-auto">
                 <div class="search-box">
                   <input type="text" class="search-box-control" placeholder="Search for name" />
   
@@ -505,12 +511,20 @@
                 </div>
               </div>
   
-              <div class="col-lg-2 col-6 mx-auto">
+              <div class="col-lg-3 col-12 mx-auto">
                 <div class="form-group">
-                  <label for="">
-                    All Services
-                  </label>
+                  <div class="form-data select-box">
+                    <select name="" class="form-control">
+                      <option value="">
+                        Sort by
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
   
+              <div class="col-lg-3 col-12">
+                <div class="form-group">
                   <div class="form-data select-box">
                     <select name="" class="form-control">
                       <option value="">
@@ -521,12 +535,8 @@
                 </div>
               </div>
   
-              <div class="col-lg-2 col-6 mx-auto">
+              <div class="col-lg-3 col-12 mx-auto">
                 <div class="form-group">
-                  <label for="">
-                    City
-                  </label>
-  
                   <div class="form-data select-box">
                     <select name="" class="form-control">
                       <option value="">
@@ -537,12 +547,8 @@
                 </div>
               </div>
   
-              <div class="col-lg-2 col-6 mx-auto">
+              <div class="col-lg-3 col-12 mx-auto">
                 <div class="form-group">
-                  <label for="">
-                    State
-                  </label>
-  
                   <div class="form-data select-box">
                     <select name="" class="form-control">
                       <option value="">
@@ -553,12 +559,8 @@
                 </div>
               </div>
   
-              <div class="col-lg-2 col-6 mx-auto">
+              <div class="col-lg-3 col-12 mx-auto">
                 <div class="form-group">
-                  <label for="">
-                    Insurance
-                  </label>
-  
                   <div class="form-data select-box">
                     <select name="" class="form-control">
                       <option value="">
@@ -568,13 +570,29 @@
                   </div>
                 </div>
               </div>
-  
-              <div class="col-lg-2 col-6 mx-auto">
+            </div>
+          </form>
+
+          <div class="search-box mobile-appear mb-3">
+            <input type="text" class="search-box-control" placeholder="Search for name" />
+
+            <a href="#" class="search-btn">
+              <img src="assets/images/form/search.svg" alt="">
+            </a>
+          </div>
+
+          <form class="form-contain form-popup mb-4">
+            <div class="overlay"></div>
+            <div class="row form-contain-row">
+              <div class="col-12">
+                <div class="heading">
+                  <h1>
+                    filter your data
+                  </h1>
+                </div>
+              </div>
+              <div class="col-lg-3 col-12 mx-auto">
                 <div class="form-group">
-                  <label for="">
-                    Sort by
-                  </label>
-  
                   <div class="form-data select-box">
                     <select name="" class="form-control">
                       <option value="">
@@ -584,11 +602,69 @@
                   </div>
                 </div>
               </div>
+  
+              <div class="col-lg-3 col-12">
+                <div class="form-group">
+                  <div class="form-data select-box">
+                    <select name="" class="form-control">
+                      <option value="">
+                        All Services
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-lg-3 col-12 mx-auto">
+                <div class="form-group">
+                  <div class="form-data select-box">
+                    <select name="" class="form-control">
+                      <option value="">
+                        City
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-lg-3 col-12 mx-auto">
+                <div class="form-group">
+                  <div class="form-data select-box">
+                    <select name="" class="form-control">
+                      <option value="">
+                        State
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-lg-3 col-12 mx-auto">
+                <div class="form-group">
+                  <div class="form-data select-box">
+                    <select name="" class="form-control">
+                      <option value="">
+                        Insurance
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 mb-3">
+                <a href="#" class="custom-btn">
+                  <img src="assets/images/filter.svg" alt="" />
+
+                  <span>
+                    filter
+                  </span>
+                </a>
+              </div>
             </div>
           </form>
           
           <div class="row">
-            <div class="col-lg-3 col-12 mb-4 px-2">
+            <div class="col-lg-3 col-12 mb-4">
               <div class="docotor-box not-affer">
                 <div class="image-content">
                   <img src="assets/images/doctor.webp" class="doctor-img" alt="" />
@@ -628,7 +704,7 @@
                       </span>
                     </a>
 
-                    <a href="#" class="read-more" type="button" data-toggle="modal" data-target="#AddServiceModal">
+                    <a href="service_profile.html" class="read-more">
                       <span>
                         Read more
                       </span>
@@ -642,7 +718,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-12 mb-4 px-2">
+            <div class="col-lg-3 col-12 mb-4">
               <div class="docotor-box not-affer">
                 <div class="image-content">
                   <img src="assets/images/doctor.webp" class="doctor-img" alt="" />
@@ -682,7 +758,7 @@
                       </span>
                     </a>
 
-                    <a href="#" class="read-more" type="button" data-toggle="modal" data-target="#AddServiceModal">
+                    <a href="service_profile.html" class="read-more">
                       <span>
                         Read more
                       </span>
@@ -696,7 +772,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-12 mb-4 px-2">
+            <div class="col-lg-3 col-12 mb-4">
               <div class="docotor-box not-affer">
                 <div class="image-content">
                   <img src="assets/images/doctor.webp" class="doctor-img" alt="" />
@@ -736,7 +812,7 @@
                       </span>
                     </a>
 
-                    <a href="#" class="read-more" type="button" data-toggle="modal" data-target="#AddServiceModal">
+                    <a href="service_profile.html" class="read-more">
                       <span>
                         Read more
                       </span>
@@ -750,7 +826,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-12 mb-4 px-2">
+            <div class="col-lg-3 col-12 mb-4">
               <div class="docotor-box not-affer">
                 <div class="image-content">
                   <img src="assets/images/doctor.webp" class="doctor-img" alt="" />
@@ -790,7 +866,7 @@
                       </span>
                     </a>
 
-                    <a href="#" class="read-more" type="button" data-toggle="modal" data-target="#AddServiceModal">
+                    <a href="service_profile.html" class="read-more">
                       <span>
                         Read more
                       </span>
@@ -804,7 +880,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-12 mb-4 px-2">
+            <div class="col-lg-3 col-12 mb-4">
               <div class="docotor-box not-affer">
                 <div class="image-content">
                   <img src="assets/images/doctor.webp" class="doctor-img" alt="" />
@@ -844,7 +920,7 @@
                       </span>
                     </a>
 
-                    <a href="#" class="read-more" type="button" data-toggle="modal" data-target="#AddServiceModal">
+                    <a href="service_profile.html" class="read-more">
                       <span>
                         Read more
                       </span>
@@ -858,7 +934,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-12 mb-4 px-2">
+            <div class="col-lg-3 col-12 mb-4">
               <div class="docotor-box not-affer">
                 <div class="image-content">
                   <img src="assets/images/doctor.webp" class="doctor-img" alt="" />
@@ -898,7 +974,7 @@
                       </span>
                     </a>
 
-                    <a href="#" class="read-more" type="button" data-toggle="modal" data-target="#AddServiceModal">
+                    <a href="service_profile.html" class="read-more">
                       <span>
                         Read more
                       </span>
@@ -912,7 +988,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-12 mb-4 px-2">
+            <div class="col-lg-3 col-12 mb-4">
               <div class="docotor-box not-affer">
                 <div class="image-content">
                   <img src="assets/images/doctor.webp" class="doctor-img" alt="" />
@@ -952,7 +1028,7 @@
                       </span>
                     </a>
 
-                    <a href="#" class="read-more" type="button" data-toggle="modal" data-target="#AddServiceModal">
+                    <a href="service_profile.html" class="read-more">
                       <span>
                         Read more
                       </span>
@@ -966,7 +1042,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-12 mb-4 px-2">
+            <div class="col-lg-3 col-12 mb-2">
               <div class="docotor-box not-affer">
                 <div class="image-content">
                   <img src="assets/images/doctor.webp" class="doctor-img" alt="" />
@@ -1006,7 +1082,7 @@
                       </span>
                     </a>
 
-                    <a href="#" class="read-more" type="button" data-toggle="modal" data-target="#AddServiceModal">
+                    <a href="service_profile.html" class="read-more">
                       <span>
                         Read more
                       </span>
@@ -1054,127 +1130,7 @@
 
     <footer>
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-12 mb-4">
-            <div class="contain">
-              <a href="#" class="brand-name">
-                <img
-                  src="assets/images/logo/footer_logo.png"
-                  loading="lazy"
-                  alt="" />
-              </a>
-
-              <p>
-                Our clinic was created to make your smile beautiful, healthy and snow-white. We offer a wide range of dental treatment and dental restoration wide range of dental treatment and dental
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-12 mb-4">
-            <div class="contain">
-              <div class="flex-data">
-                <div class="data">
-                  <h1>
-                    Quick Links
-                  </h1>
-
-                  <ul class="links">
-                    <li>
-                      <a href="#">
-                        Appointments
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#">
-                        Our Doctors
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#">
-                        Our Services
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="data">
-                  <h1>
-                    Help
-                  </h1>
-
-                  <ul class="links">
-                    <li>
-                      <a href="#">
-                        Help & FAQs
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#">
-                        Contact Us
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#">
-                        Privacy Policy
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-12 mb-4">
-            <div class="contain">
-              <h1>
-                Newsletter
-              </h1>
-
-              <form class="footer-form">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Email Address" />
-
-                  <a href="#" class="send-code">
-                    <img
-                      src="assets/images/logo/left-arrow.svg"
-                      loading="lazy"
-                      alt="" />
-                  </a>
-                </div>
-              </form>
-
-              <ul class="socail-media">
-                <li>
-                  <a href="#">
-                    <img src="assets/images/navbar/face.svg" alt="">
-                  </a>
-                </li>
-  
-                <li>
-                  <a href="#">
-                    <img src="assets/images/navbar/linkedn.svg" alt="">
-                  </a>
-                </li>
-  
-                <li>
-                  <a href="#">
-                    <img src="assets/images/navbar/insta.svg" alt="">
-                  </a>
-                </li>
-  
-                <li>
-                  <a href="#">
-                    <img src="assets/images/navbar/twiiter.svg" alt="">
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        
 
         <div class="copyright">
           <p>
