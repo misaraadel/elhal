@@ -52,6 +52,7 @@ html[dir=ltr] * {
   margin: 0px;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  text-transform: capitalize;
 }
 *::-moz-selection {
   background-color: #00768c;
@@ -2359,8 +2360,6 @@ footer .copyright p {
 .profile .profile-heading {
   width: 100%;
   padding-bottom: 18px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 25px;
 }
 .profile .profile-heading.no-border {
   border-bottom: 0px !important;
@@ -3343,8 +3342,8 @@ footer .copyright p {
 }
 .table-data-contain thead tr th {
   width: 25%;
-  text-align: center;
-  padding: 10px 0px;
+  text-align: start;
+  padding: 10px 15px;
   height: 44px;
   color: var(--secondary-color);
   font-size: 16px;
@@ -3364,14 +3363,13 @@ footer .copyright p {
   color: var(--secondary-color);
   font-size: 16px;
   font-weight: 500;
-  text-align: center;
+  text-align: start;
   height: 44px;
-  padding: 10px 0px;
+  padding: 10px 15px;
   vertical-align: middle;
 }
 .table-data-contain tbody tr td .wrapper {
   width: 100%;
-  justify-content: center;
 }
 .table-data-contain tbody tr td .add-number {
   width: 100%;
@@ -3432,7 +3430,6 @@ footer .copyright p {
   width: 24px;
   height: 24px;
   display: flex;
-  margin: auto;
 }
 .table-data-contain tbody tr td .delete img {
   width: 100%;
@@ -3686,20 +3683,36 @@ footer .copyright p {
   align-content: center;
   position: absolute;
   bottom: 10px;
-  right: 10px;
-}
-.docotor-box .data-hover .read-more img {
-  width: 24px;
-  height: 24px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -webkit-margin-start: 10px;
-          margin-inline-start: 10px;
+  right: 15px;
 }
 .docotor-box .data-hover .read-more span {
   color: var(--light);
-  font-size: 15px;
-  font-weight: 500;
+  font-weight: 700;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+.docotor-box .data-hover .read-more .read-image-content {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.docotor-box .data-hover .read-more .read-image-content img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.docotor-box .data-hover .read-more:hover span {
+  color: var(--secondary-color) !important;
+}
+.docotor-box .data-hover .read-more:hover img {
+  -webkit-animation: translateX 1s linear infinite;
+          animation: translateX 1s linear infinite;
 }
 .docotor-box::after {
   content: "";
@@ -4038,8 +4051,8 @@ footer .copyright p {
   width: calc(100% - 30px);
 }
 .order-box .flex-item .name img {
-  width: 35px;
-  height: 35px;
+  width: 24px;
+  height: 24px;
   -o-object-fit: contain;
      object-fit: contain;
   -webkit-margin-end: 10px;
@@ -4073,9 +4086,8 @@ footer .copyright p {
   padding: 0px 5px;
 }
 .order-box .data-list li {
-  width: 100%;
-  -webkit-margin-end: 12px;
-          margin-inline-end: 12px;
+  -webkit-margin-end: 30px;
+          margin-inline-end: 30px;
   margin-bottom: 12px;
   display: flex;
   align-items: center;
@@ -4673,6 +4685,30 @@ footer .copyright p {
 .padding-screen {
   padding-right: 0px;
   padding-left: 0px;
+}
+
+.small-font {
+  font-size: 20px !important;
+}
+
+.form-clock {
+  height: 36px !important;
+}
+
+.days-contain {
+  width: 100%;
+  display: none;
+}
+.days-contain.active-day {
+  display: block;
+}
+
+.flex-heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
 }
 
 @media (max-width: 999px) {

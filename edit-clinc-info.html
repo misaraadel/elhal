@@ -358,15 +358,21 @@
                 </div>
               </div>
 
-              <div class="form-data show_hide_password">
-                <input type="password" class="form-control shadow_input" placeholder="Password" />
+              <div class="form-group">
+                <label for="">
+                  Password
+                </label>
 
-                <a href="#" class="btn-contain show_pass">
-                  <img
-                    src="assets/images/form/eye.svg"
-                    loading="lazy"
-                    alt="">
-                </a>
+                <div class="form-data show_hide_password">
+                  <input type="password" class="form-control shadow_input" placeholder="Password" />
+
+                  <a href="#" class="btn-contain show_pass">
+                    <img
+                      src="assets/images/form/eye.svg"
+                      loading="lazy"
+                      alt="">
+                  </a>
+                </div>
               </div>
 
               <div class="flex-data">
@@ -659,7 +665,7 @@
         <div class="container">
           <div class="profile-heading">
             <h1>
-              Profile
+              Edit Clinc Info
             </h1>
 
             <ul class="bread-list">
@@ -697,7 +703,7 @@
                 </li>
 
                 <li>
-                  <a href="services.html">
+                  <a href="#">
                     <img src="assets/images/profile/services.svg" alt="">
 
                     <span>
@@ -717,7 +723,7 @@
                 </li>
 
                 <li>
-                  <a href="change-pass.html">
+                  <a href="#">
                     <img src="assets/images/profile/change_pass.svg" alt="">
 
                     <span>
@@ -741,7 +747,7 @@
             <div class="col-lg-9 col-12 mb-4">
               <form class="form-contain">
                 <h2>
-                  Dental Clinic Info
+                  Edit Dental Clinic Info
                 </h2>
                 <div class="row">
                   <div class="col-12">
@@ -750,8 +756,12 @@
                         Dental Clinic Name
                       </label>
       
-                      <div class="form-data">
-                        <input type="text" class="form-control" placeholder="Dental Clinic Name" />
+                      <div class="form-data select-box">
+                        <select name="" class="form-control">
+                          <option value="">
+                            Dental Clinic Name
+                          </option>
+                        </select>
                       </div>
                     </div>
                   </div>
@@ -1042,7 +1052,6 @@
         </div>
       </section>
     </main>
-
 
     <!--Set Special Hours  modal -->
     <div class="modal fade" id="SetSpecailHoursModal" tabindex="-1" role="dialog" aria-labelledby="SetSpecailHoursModalLabel" aria-hidden="true">
