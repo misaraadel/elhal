@@ -1807,13 +1807,13 @@ html[dir=rtl] .navabr .bottom-nav .content .flex-contain .drop-list-shape .list 
   -webkit-animation: tada 0.4s linear both;
           animation: tada 0.4s linear both;
 }
-.navabr .bottom-nav .content .flex-contain .drop-list-shape:hover .list {
-  transform: translateY(0px);
-  opacity: 1;
-  visibility: visible;
+.navabr .bottom-nav .content .flex-contain .drop-list-shape.active .list {
+  transform: translateY(0px) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
-.navabr .bottom-nav .content .flex-contain .drop-list-shape:hover .drop-name::after {
-  transform: rotate(180deg);
+.navabr .bottom-nav .content .flex-contain .drop-list-shape.active .drop-name::after {
+  transform: rotate(180deg) !important;
 }
 
 header {
@@ -4670,6 +4670,11 @@ footer .copyright p {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
+.padding-screen {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 @media (max-width: 999px) {
   .navabr .top-nav .content .socail-media li:first-child {
     display: none;
@@ -4782,17 +4787,19 @@ footer .copyright p {
     min-width: 200px !important;
   }
   .join-us {
-    padding-bottom: 40px;
+    padding: 40px 0px 0px !important;
   }
   .join-us .image-content {
-    margin-bottom: 20px;
     height: 400px;
   }
   .graph-heading {
     width: 100% !important;
   }
   .graph-heading h1 {
-    font-size: 41px !important;
+    font-size: 35px !important;
+  }
+  .graph-heading .grahp-text {
+    font-size: 90px !important;
   }
   header {
     padding: 200px 0px 50px !important;
@@ -4867,7 +4874,7 @@ footer .copyright p {
   .form-popup .form-contain-row {
     width: 95%;
     border-radius: 20px 20px 0px 0px;
-    padding: 20px 16px 40px;
+    padding: 20px 16px 50px;
     background-color: var(--light);
     margin: 0px auto !important;
     position: absolute;
@@ -4885,7 +4892,7 @@ footer .copyright p {
     color: var(--secondary-color);
     text-align: center;
     text-transform: capitalize;
-    margin-bottom: 20px;
+    margin-bottom: 30px !important;
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
   }
@@ -4967,5 +4974,24 @@ footer .copyright p {
   }
   .profile .custom-btn.big-btn {
     margin-top: 15px !important;
+  }
+  .profile .nav.nav-tabs .nav-item .nav-link {
+    flex-direction: column !important;
+  }
+  .profile .nav.nav-tabs .nav-item .nav-link .image-content {
+    margin-bottom: 10px;
+  }
+  .padding-screen {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+  header .form-contain {
+    padding: 20px 15px !important;
+  }
+  .order-mobile-0 {
+    order: 0;
+  }
+  .order-mobile-1 {
+    order: 1 !important;
   }
 }/*# sourceMappingURL=style.css.map */

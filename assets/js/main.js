@@ -26,17 +26,13 @@ $(document).ready(function () {
         $('body').toggleClass('overflowNone')
     });
 
-    // $('.disease').click(function(){
-    //     $('.select-data').toggleClass('active');
-    // });
+    $('.notification .drop-name').click(function(){
+        $('.notification').toggleClass('active');
+    });
 
-    // $('.big-services').click(function(){
-    //     $('.select-data').toggleClass('active');
-    // });
-
-    // $('.maxillary').click(function(){
-    //     $('.select-data').toggleClass('active');
-    // });
+    $('.avatar .drop-name').click(function(){
+        $('.avatar').toggleClass('active');
+    });
 
     $('.filter-icon').click(function(){
         $('.form-popup').addClass('active-form');
