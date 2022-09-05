@@ -4867,7 +4867,7 @@ footer .copyright p {
   .form-popup .form-contain-row {
     width: 95%;
     border-radius: 20px 20px 0px 0px;
-    padding: 20px 16px 20px;
+    padding: 20px 16px 40px;
     background-color: var(--light);
     margin: 0px auto !important;
     position: absolute;
@@ -4886,6 +4886,8 @@ footer .copyright p {
     text-align: center;
     text-transform: capitalize;
     margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
   }
   .form-popup .custom-btn img {
     filter: invert(99%) sepia(1%) saturate(7477%) hue-rotate(184deg) brightness(111%) contrast(100%);
