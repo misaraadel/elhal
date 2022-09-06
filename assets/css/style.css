@@ -4926,11 +4926,12 @@ footer .copyright p {
     padding: 200px 0px 50px !important;
   }
   .profile .form-contain .button-confirm {
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0px !important;
   }
   .profile .form-contain .button-confirm .custom-btn {
-    margin: 0px 5px !important;
-    width: 45% !important;
+    margin: 0px 0px !important;
+    width: 48.5% !important;
   }
   .profile .profile-list {
     display: none;
@@ -5031,7 +5032,7 @@ footer .copyright p {
     justify-content: space-between;
   }
   .form-popup .button-confirm .custom-btn {
-    width: 49% !important;
+    width: 48.5% !important;
   }
   .form-popup .button-confirm .custom-btn.cancel {
     outline: 1px solid #e02020 !important;
