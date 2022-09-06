@@ -289,6 +289,49 @@
       }
     }
 
+    
+
+    .button-confirm {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+      .custom-btn {
+        width: 49% !important;
+
+        &.cancel {
+          outline: 1px solid #e02020 !important;
+          background: var(--light);
+
+          &::after {
+            background-color: #e02020;
+          }
+
+          span {
+            color: #e02020;
+          }
+
+          &:hover span {
+            color: var(--light);
+          }
+        }
+
+        &.border {
+          outline: 1px solid var(--secondary-color) !important;
+          background: var(--light);
+
+          span {
+            color: var(--secondary-color);
+          }
+
+          &:hover span {
+            color: var(--light);
+          }
+        }
+      }
+    }
+
     &.active-form {
       opacity: 1;
       visibility: visible;

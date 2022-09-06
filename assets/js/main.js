@@ -42,6 +42,10 @@ $(document).ready(function () {
         $('.form-popup').removeClass('active-form');
     });
 
+    $('.form-popup .custom-btn.cancel').click(function(){
+        $('.form-popup').removeClass('active-form');
+    });
+
     $('.days-data').click(function(){
         $('.days-contain').toggleClass('active-day');
     });

@@ -5023,6 +5023,39 @@ footer .copyright p {
   .form-popup .custom-btn span {
     font-size: 20px !important;
   }
+  .form-popup .button-confirm {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+  }
+  .form-popup .button-confirm .custom-btn {
+    width: 49% !important;
+  }
+  .form-popup .button-confirm .custom-btn.cancel {
+    outline: 1px solid #e02020 !important;
+    background: var(--light);
+  }
+  .form-popup .button-confirm .custom-btn.cancel::after {
+    background-color: #e02020;
+  }
+  .form-popup .button-confirm .custom-btn.cancel span {
+    color: #e02020;
+  }
+  .form-popup .button-confirm .custom-btn.cancel:hover span {
+    color: var(--light);
+  }
+  .form-popup .button-confirm .custom-btn.border {
+    outline: 1px solid var(--secondary-color) !important;
+    background: var(--light);
+  }
+  .form-popup .button-confirm .custom-btn.border span {
+    color: var(--secondary-color);
+  }
+  .form-popup .button-confirm .custom-btn.border:hover span {
+    color: var(--light);
+  }
   .form-popup.active-form {
     opacity: 1;
     visibility: visible;
