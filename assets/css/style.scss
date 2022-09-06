@@ -3468,12 +3468,14 @@ footer {
   }
 
   td {
-    text-align: center;
+    text-align: start;
+    padding: 10px 15px !important;
   }
 
   th {
     color: var(--secondary-color);
-    text-align: center;
+    text-align: start;
+    padding: 10px 15px !important;
   }
 
   .comment-box {
@@ -4047,6 +4049,14 @@ footer {
   justify-content: space-between;
   align-content: flex-start;
   align-items: flex-start
+}
+
+.woman-apear, .man-data {
+  display: none;
+}
+
+.active-man-box {
+  display: block !important;
 }
 
 @import 'media';

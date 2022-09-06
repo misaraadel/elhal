@@ -46,6 +46,35 @@ $(document).ready(function () {
         $('.days-contain').toggleClass('active-day');
     });
 
+    $('.add-clinc-info-select').click(function(){
+        $('.add-clinc-info-select').toggleClass('active');
+    });
+
+    $('.add-order-disease').click(function(){
+        $('.add-order-disease').toggleClass('active');
+    });
+
+    $('.add-order-services').click(function(){
+        $('.add-order-services').toggleClass('active');
+    });
+
+    $('.add-order-maxillary').click(function(){
+        $('.add-order-maxillary').toggleClass('active');
+    });
+
+    $('.add-order-upper-right').click(function(){
+        $('.add-order-upper-right').toggleClass('active');
+    });
+
+    $('.man-data').click(function(){
+        $('.man-apear').addClass('active-man-box');
+        $('.woman-apear').removeClass('active-man-box');
+    });
+
+    $('.woman-data').click(function(){
+        $('.man-apear').removeClass('active-man-box');
+        $('.woman-apear').addClass('active-man-box');
+    });
 
     $('.owl-doctors').owlCarousel({
         rtl: true,
@@ -109,14 +138,14 @@ $(document).ready(function () {
         }
     });
 
-    var btns = document.getElementsByClassName("select-data");
-    for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-        });
-    };
+    // var btns = document.getElementsByClassName("select-data");
+    // for (var i = 0; i < btns.length; i++) {
+    //     btns[i].addEventListener("click", function() {
+    //         var current = document.getElementsByClassName("active");
+    //         current[0].className = current[0].className.replace(" active", "");
+    //         this.className += " active";
+    //     });
+    // };
 
 });
 

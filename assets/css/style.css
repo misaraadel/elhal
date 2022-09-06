@@ -4189,11 +4189,13 @@ footer .copyright p {
   justify-content: center;
 }
 .order-box td {
-  text-align: center;
+  text-align: start;
+  padding: 10px 15px !important;
 }
 .order-box th {
   color: var(--secondary-color);
-  text-align: center;
+  text-align: start;
+  padding: 10px 15px !important;
 }
 .order-box .comment-box {
   width: 100%;
@@ -4709,6 +4711,14 @@ footer .copyright p {
   justify-content: space-between;
   align-content: flex-start;
   align-items: flex-start;
+}
+
+.woman-apear, .man-data {
+  display: none;
+}
+
+.active-man-box {
+  display: block !important;
 }
 
 @media (max-width: 999px) {
