@@ -46,25 +46,30 @@ $(document).ready(function () {
         $('.days-contain').toggleClass('active-day');
     });
 
-    $('.add-clinc-info-select').click(function(){
+    $('.add-clinc-info-select .data-selected').click(function(){
         $('.add-clinc-info-select').toggleClass('active');
     });
 
-    $('.add-order-disease').click(function(){
+    $('.add-order-disease .data-selected').click(function(){
         $('.add-order-disease').toggleClass('active');
     });
 
-    $('.add-order-services').click(function(){
+    $('.add-order-services .data-selected').click(function(){
         $('.add-order-services').toggleClass('active');
     });
 
-    $('.add-order-maxillary').click(function(){
+    $('.add-order-maxillary .data-selected').click(function(){
         $('.add-order-maxillary').toggleClass('active');
     });
 
-    $('.add-order-upper-right').click(function(){
+    $('.add-order-upper-right .data-selected').click(function(){
         $('.add-order-upper-right').toggleClass('active');
     });
+
+    $('.add-doctor-second-select-data .data-selected').click(function(){
+        $('.add-doctor-second-select-data').toggleClass('active');
+    });
+
 
     $('.man-data').click(function(){
         $('.man-apear').addClass('active-man-box');
