@@ -5115,4 +5115,10 @@ footer .copyright p {
   .order-mobile-1 {
     order: 1 !important;
   }
+  .order-box .data-list {
+    justify-content: flex-start !important;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }/*# sourceMappingURL=style.css.map */
