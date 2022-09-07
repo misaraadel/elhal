@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/rounded/toggle/check_box_24px copy</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Doctor-Profile-Add-a-Review" transform="translate(-651.000000, -446.000000)" fill="#000">
+            <g id="Group-22" transform="translate(498.000000, 328.000000)">
+                <g id="Group-17" transform="translate(103.000000, 118.000000)">
+                    <g id="icon/rounded/toggle/check_box_24px-copy" transform="translate(50.000000, 0.000000)">
+                        <path d="M20,29.1993223 L26.9166667,33.3826557 C28.1833333,34.1493223 29.7333333,33.015989 29.4,31.5826557 L27.5666667,23.715989 L33.6833333,18.415989 C34.8,17.4493223 34.2,15.615989 32.7333333,15.4993223 L24.6833333,14.815989 L21.5333333,7.38265567 C20.9666667,6.03265567 19.0333333,6.03265567 18.4666667,7.38265567 L15.3166667,14.7993223 L7.26666667,15.4826557 C5.8,15.5993223 5.2,17.4326557 6.31666667,18.3993223 L12.4333333,23.6993223 L10.6,31.565989 C10.2666667,32.9993223 11.8166667,34.1326557 13.0833333,33.365989 L20,29.1993223 L20,29.1993223 Z" id="icon/toggle/star_24px"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
