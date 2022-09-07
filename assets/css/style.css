@@ -2947,6 +2947,11 @@ footer .copyright p {
   font-weight: 500;
   text-align: center;
 }
+.modal-content .modal-body .time-notication {
+  font-size: 15px;
+  font-weight: 500;
+  color: #808080;
+}
 .modal-content .icon-contain {
   width: 100%;
   display: flex;
@@ -3926,7 +3931,7 @@ footer .copyright p {
 .order-box {
   width: 100%;
   display: block;
-  padding: 25px 14px 15px;
+  padding: 16px 14px 16px;
   background-color: var(--light);
   border-radius: 15px;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
@@ -4075,8 +4080,8 @@ footer .copyright p {
   width: calc(100% - 30px);
 }
 .order-box .flex-item .name img {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   -o-object-fit: contain;
      object-fit: contain;
   -webkit-margin-end: 10px;
@@ -4108,6 +4113,19 @@ footer .copyright p {
   justify-content: flex-start;
   flex-wrap: wrap;
   padding: 0px 5px;
+}
+.order-box .data-list.data-margin {
+  padding: 0px !important;
+  width: 100%;
+}
+.order-box .data-list.data-margin li {
+  width: 100%;
+  -webkit-margin-end: 0px !important;
+          margin-inline-end: 0px !important;
+}
+.order-box .data-list.data-margin li .name {
+  min-width: 100px !important;
+  margin: 0px !important;
 }
 .order-box .data-list li {
   -webkit-margin-end: 30px;
@@ -5065,6 +5083,13 @@ footer .copyright p {
 
 .no-margin {
   margin-bottom: 0px !important;
+}
+
+.text-file-upoad {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin: 16px 0px;
 }
 
 @media (max-width: 999px) {

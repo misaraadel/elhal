@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Services-Empty" transform="translate(-953.000000, -803.000000)" fill="#00768C">
+            <g id="Items" transform="translate(165.000000, 249.000000)">
+                <g id="Group-6" transform="translate(285.000000, 0.000000)">
+                    <g id="Group-15" transform="translate(24.000000, 382.000000)">
+                        <g id="Group-18" transform="translate(0.000000, 157.000000)">
+                            <g id="Services-card-2" transform="translate(264.000000, 0.000000)">
+                                <g id="Group-10" transform="translate(12.000000, 12.000000)">
+                                    <g id="Group-11" transform="translate(200.000000, 0.000000)">
+                                        <g id="icon" transform="translate(3.000000, 3.000000)">
+                                            <path d="M13.5,9.75 L9.75,9.75 L9.75,13.5 C9.75,13.9125 9.4125,14.25 9,14.25 C8.5875,14.25 8.25,13.9125 8.25,13.5 L8.25,9.75 L4.5,9.75 C4.0875,9.75 3.75,9.4125 3.75,9 C3.75,8.5875 4.0875,8.25 4.5,8.25 L8.25,8.25 L8.25,4.5 C8.25,4.0875 8.5875,3.75 9,3.75 C9.4125,3.75 9.75,4.0875 9.75,4.5 L9.75,8.25 L13.5,8.25 C13.9125,8.25 14.25,8.5875 14.25,9 C14.25,9.4125 13.9125,9.75 13.5,9.75 Z" id="icon/content/add_24px"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

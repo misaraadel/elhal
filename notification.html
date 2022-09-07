@@ -279,6 +279,7 @@
                       </span>
                     </a>
                   </li>
+
                   <li class="list-contain">
                     <a href="services.html" class="data">
                       <img src="assets/images/profile/services.svg" alt="">
@@ -290,7 +291,7 @@
                   </li>
 
                   <li class="list-contain">
-                    <a href="add-clinc-info.html" class="data">
+                    <a href="service_profile_overview.html" class="data">
                       <img src="assets/images/profile/user.svg" alt="">
 
                       <span>
@@ -667,13 +668,13 @@
               <div class="col-lg-6 col-6 mb-1">
                 <div>
                   <h1>
-                    Add Order
+                    Notifications
                   </h1>
       
                   <ul class="bread-list">
                     <li class="item">
                       <a href="#">
-                        Add Order
+                        Notifications
                       </a>
                     </li>
       
@@ -685,7 +686,7 @@
       
                     <li class="item">
                       <span class="name">
-                        Add Order
+                        Notifications
                       </span>
                     </li>
                   </ul>
@@ -698,7 +699,7 @@
             <div class="col-lg-3 col-12 mb-4 monile-none">
               <ul class="profile-list">
                 <li >
-                  <a href="add-order.html">
+                  <a href="order-list.html">
                     <img src="assets/images/profile/orders.svg" alt="">
 
                     <span>
@@ -707,7 +708,7 @@
                   </a>
                 </li>
 
-                <li class="active">
+                <li>
                   <a href="services.html">
                     <img src="assets/images/profile/services.svg" alt="">
 
@@ -718,7 +719,7 @@
                 </li>
 
                 <li>
-                  <a href="add-clinc-info.html">
+                  <a href="service_profile_overview.html">
                     <img src="assets/images/profile/user.svg" alt="">
 
                     <span>
@@ -737,7 +738,7 @@
                   </a>
                 </li>
 
-                <li>
+                <li class="active">
                   <a href="notification.html">
                     <img src="assets/images/profile/notifcation.svg" alt="">
 
@@ -751,13 +752,11 @@
 
             <div class="col-lg-9 col-12 mb-4">
               <div class="notication-list form-contain">
-                <div class="heading-notifcation">
-                  <h1>
-                    notifcation (50)
-                  </h1>
-                </div>
+                <h2>
+                  Notifications (50)
+                </h2>
 
-                <div class="notication-item">
+                <div class="notication-item" data-toggle="modal" data-dismiss="modal" data-target="#notifcationModal">
                   <a href="#" class="active">
                     <div class="flex">
                       <div class="image-content">
@@ -781,7 +780,7 @@
                   </a>
                 </div>
 
-                <div class="notication-item">
+                <div class="notication-item" data-toggle="modal" data-dismiss="modal" data-target="#notifcationModal">
                   <a href="#" class="active">
                     <div class="flex">
                       <div class="image-content">
@@ -805,7 +804,7 @@
                   </a>
                 </div>
 
-                <div class="notication-item">
+                <div class="notication-item" data-toggle="modal" data-dismiss="modal" data-target="#notifcationModal">
                   <a href="#" class="active">
                     <div class="flex">
                       <div class="image-content">
@@ -829,7 +828,7 @@
                   </a>
                 </div>
 
-                <div class="notication-item"">
+                <div class="notication-item" data-toggle="modal" data-dismiss="modal" data-target="#notifcationModal">
                   <a href="#" class="active">
                     <div class="flex">
                       <div class="image-content">
@@ -853,7 +852,7 @@
                   </a>
                 </div>
 
-                <div class="notication-item">
+                <div class="notication-item" data-toggle="modal" data-dismiss="modal" data-target="#notifcationModal">
                   <a href="#" class="active">
                     <div class="flex">
                       <div class="image-content">
@@ -877,7 +876,7 @@
                   </a>
                 </div>
 
-                <div class="notication-item">
+                <div class="notication-item" data-toggle="modal" data-dismiss="modal" data-target="#notifcationModal">
                   <a href="#" class="active">
                     <div class="flex">
                       <div class="image-content">
@@ -901,7 +900,7 @@
                   </a>
                 </div>
 
-                <div class="notication-item">
+                <div class="notication-item" data-toggle="modal" data-dismiss="modal" data-target="#notifcationModal">
                   <a href="#" class="active">
                     <div class="flex">
                       <div class="image-content">
@@ -925,7 +924,7 @@
                   </a>
                 </div>
 
-                <div class="notication-item"">
+                <div class="notication-item" data-toggle="modal" data-dismiss="modal" data-target="#notifcationModal">
                   <a href="#" class="active">
                     <div class="flex">
                       <div class="image-content">
@@ -955,21 +954,25 @@
       </section>
     </main>
 
-    <!--delete  modal -->
-    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <!--notifcation  modal -->
+    <div class="modal fade" id="notifcationModal" tabindex="-1" role="dialog" aria-labelledby="notifcationModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title" id="deleteModalLabel">
-              Confirm Delete
+            <h1 class="modal-title" id="notifcationModalLabel">
+              notifcation 
             </h1>
           </div>
 
           <div class="modal-body">
             <div class="form-contain">
               <p>
-                Are you sure you want to delete “Teeth whitening”
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quia qui reprehenderit quas eius nihil porro error ut facere accusantium, id atque inventore modi debitis fuga blanditiis quo veritatis repellendus.
               </p>
+
+              <span class="time-notication">
+                9 Hours Ago
+              </span>
 
               <div class="button-confirm">
                 <a href="#" class="custom-btn cancel" data-dismiss="modal">
@@ -978,9 +981,9 @@
                   </span>
                 </a>
 
-                <a href="#" class="custom-btn">
+                <a href="#" class="custom-btn" data-dismiss="modal">
                   <span>
-                    save
+                    got it
                   </span>
                 </a>
               </div>
