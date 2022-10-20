@@ -42,6 +42,7 @@ html[dir="rtl"] {
     }
   }
 
+  .card .card-header .btn-link::after,
   .form-contain .select-data .data-selected::after,
   .form-contain .form-group .form-data.select-box::after,
   .form-contain .form-group .form-data .btn-contain {
@@ -4590,6 +4591,62 @@ footer {
       width: 100%;
       height: 600px;
       object-fit: contain;
+    }
+  }
+}
+
+.card {
+  border: 0px;
+  padding: 0px;
+  margin-bottom: 10px;
+
+  .card-body {
+    padding: 0px;
+    border: 0px;
+  }
+
+  .card-header {
+    padding: 0px;
+    border: 0px;
+    background-color: transparent !important;
+    margin-bottom: 10px;
+
+    .btn-link {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100% !important;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background: url(../images/form/down_arrow.svg) center/contain no-repeat;
+        top: calc(50% - 12px);
+        right: 16px;
+        z-index: 9;
+        pointer-events: none;
+      }
+
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+
+      .list-contain {
+        margin: 0px !important;
+        
+        label {
+          font-weight: 700;
+        }
+      }
+
+      &[aria-expanded="true"] {
+        &::after {
+          transform: rotate(180deg);
+        } 
+      }
     }
   }
 }

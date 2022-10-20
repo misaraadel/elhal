@@ -1148,6 +1148,7 @@ html[dir=rtl] footer .contain .footer-form .form-group .send-code:hover img {
   -webkit-animation: translateXAR 2s linear infinite;
           animation: translateXAR 2s linear infinite;
 }
+html[dir=rtl] .card .card-header .btn-link::after,
 html[dir=rtl] .form-contain .select-data .data-selected::after,
 html[dir=rtl] .form-contain .form-group .form-data.select-box::after,
 html[dir=rtl] .form-contain .form-group .form-data .btn-contain {
@@ -5203,6 +5204,52 @@ footer .copyright p {
   height: 600px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.card {
+  border: 0px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+.card .card-body {
+  padding: 0px;
+  border: 0px;
+}
+.card .card-header {
+  padding: 0px;
+  border: 0px;
+  background-color: transparent !important;
+  margin-bottom: 10px;
+}
+.card .card-header .btn-link {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100% !important;
+  position: relative;
+}
+.card .card-header .btn-link::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url(../images/form/down_arrow.svg) center/contain no-repeat;
+  top: calc(50% - 12px);
+  right: 16px;
+  z-index: 9;
+  pointer-events: none;
+}
+.card .card-header .btn-link:hover, .card .card-header .btn-link:focus {
+  text-decoration: none;
+}
+.card .card-header .btn-link .list-contain {
+  margin: 0px !important;
+}
+.card .card-header .btn-link .list-contain label {
+  font-weight: 700;
+}
+.card .card-header .btn-link[aria-expanded=true]::after {
+  transform: rotate(180deg);
 }
 
 @media (max-width: 999px) {
