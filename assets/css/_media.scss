@@ -359,6 +359,71 @@
     display: flex !important;
   }
   
+  .modal-doctor {
+    max-width: 100% !important;
+    margin: 40px 20px 0px !important;
+
+    .modal-body {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+
+    .profile .nav.nav-tabs li {
+      margin-inline-end: 10px !important;
+
+      span {
+        font-size: 10px !important;
+      }
+    }
+
+    .profile .nav.nav-tabs.under-line-data .nav-item {
+      margin-inline-end: 10px !important;
+    }
+
+    .profile-service-data .heading-profile .contain .flex-data .contain h1 {
+      text-align: center;
+    }
+
+    p {
+      font-size: 12px !important;
+      text-align: unset !important;
+    }
+
+    .profile-service-data .data-list li {
+      flex-direction: column;
+      justify-content: flex-start !important;
+      align-items: flex-start !important;
+      align-content: flex-start !important;
+      margin-bottom: 10px !important;
+      margin-inline-end: 0px !important;
+
+      .name {
+        font-size: 15px;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      .data {
+        font-size: 14px !important;
+        display: flex;
+        .name  {
+          margin: 0px 5px !important;
+        }
+      }
+    }
+
+    .profile .form-contain h2 {
+      font-size: 18px !important;
+    }
+
+    .modal-body {
+      padding-bottom: 0px !important;
+    }
+  }
+
+  .modal {
+    padding: 0px !important;  
+  }
 
   .flex-heading {
     display: flex;

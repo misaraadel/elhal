@@ -4651,4 +4651,13 @@ footer {
   }
 }
 
+.modal-doctor {
+  max-width: 70% !important;
+
+  .profile {
+    padding: 0px !important
+  }
+
+}
+
 @import 'media';

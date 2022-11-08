@@ -5202,6 +5202,13 @@ footer .copyright p {
   transform: rotate(180deg);
 }
 
+.modal-doctor {
+  max-width: 70% !important;
+}
+.modal-doctor .profile {
+  padding: 0px !important;
+}
+
 @media (max-width: 999px) {
   .navabr .top-nav .content .socail-media li:first-child {
     display: none;
@@ -5483,6 +5490,62 @@ footer .copyright p {
   }
   .mobile-appear {
     display: flex !important;
+  }
+  .modal-doctor {
+    max-width: 100% !important;
+    margin: 40px 20px 0px !important;
+  }
+  .modal-doctor .modal-body {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .modal-doctor .profile .nav.nav-tabs li {
+    -webkit-margin-end: 10px !important;
+            margin-inline-end: 10px !important;
+  }
+  .modal-doctor .profile .nav.nav-tabs li span {
+    font-size: 10px !important;
+  }
+  .modal-doctor .profile .nav.nav-tabs.under-line-data .nav-item {
+    -webkit-margin-end: 10px !important;
+            margin-inline-end: 10px !important;
+  }
+  .modal-doctor .profile-service-data .heading-profile .contain .flex-data .contain h1 {
+    text-align: center;
+  }
+  .modal-doctor p {
+    font-size: 12px !important;
+    text-align: unset !important;
+  }
+  .modal-doctor .profile-service-data .data-list li {
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    align-content: flex-start !important;
+    margin-bottom: 10px !important;
+    -webkit-margin-end: 0px !important;
+            margin-inline-end: 0px !important;
+  }
+  .modal-doctor .profile-service-data .data-list li .name {
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .modal-doctor .profile-service-data .data-list li .data {
+    font-size: 14px !important;
+    display: flex;
+  }
+  .modal-doctor .profile-service-data .data-list li .data .name {
+    margin: 0px 5px !important;
+  }
+  .modal-doctor .profile .form-contain h2 {
+    font-size: 18px !important;
+  }
+  .modal-doctor .modal-body {
+    padding-bottom: 0px !important;
+  }
+  .modal {
+    padding: 0px !important;
   }
   .flex-heading {
     display: flex;
