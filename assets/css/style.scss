@@ -2096,6 +2096,12 @@ footer {
       font-size: 18px;
       font-weight: 500;
       text-align: center;
+      
+      &.small-text {
+        font-size: 15px !important;
+        font-weight: 500 !important;
+        color: #000 !important;
+      }
     }
 
     .time-notication {
@@ -3533,52 +3539,53 @@ footer {
     text-align: start;
     padding: 10px 15px !important;
   }
+}
 
-  .comment-box {
+.comment-box {
+  width: 100%;
+  margin-bottom: 16px;
+
+  .flex-data {
     width: 100%;
-    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
 
-    .flex-data {
-      width: 100%;
+    h3 {
       display: flex;
       align-items: center;
       align-content: center;
-      justify-content: space-between;
-      margin-bottom: 10px;
-
-      h3 {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        color: var(--dark-pragraph);
-        font-size: 16px;
-        font-weight: 700;
-        margin: 0px;
-        width: 70%;
-
-        img {
-          width: 30px;
-          height: 30px;
-          border-radius: 50%;
-          object-position: top;
-          object-fit: cover;
-          margin-inline-end: 15px;
-        }
-      }
-
-      span {
-        color: #808080;
-        font-size: 15px;
-        font-weight: 500;
-      }
-    }
-
-    p {
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--dark);
+      color: var(--dark-pragraph);
+      font-size: 16px;
+      font-weight: 700;
       margin: 0px;
+      width: 70%;
+
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-position: top;
+        object-fit: cover;
+        margin-inline-end: 15px;
+      }
     }
+
+    span {
+      color: #808080;
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 500 !important;
+    color: var(--dark);
+    margin: 0px;
+    text-align: start !important;
   }
 }
 
