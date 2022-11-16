@@ -74,6 +74,18 @@ $(document).ready(function () {
         $('.add-doctor-second-select-data').toggleClass('active');
     });
 
+    $('#thirdData').click(function(){
+        $('.more-info').toggleClass('active');
+    });
+
+    $('#firstData').click(function(){
+        $('.more-info').toggleClass('active');
+    });
+
+    $('#firstData').click(function(){
+        $('.more-info').toggleClass('active');
+    });
+
 
     $('.man-data').click(function(){
         $('.man-apear').addClass('active-man-box');

@@ -2901,6 +2901,9 @@ footer .copyright p {
   font-weight: 500 !important;
   color: #000 !important;
 }
+.modal-content .modal-body p.bold-text, .modal-content .modal-body p.desc-data {
+  text-align: start;
+}
 .modal-content .modal-body .time-notication {
   font-size: 15px;
   font-weight: 500;
@@ -3350,6 +3353,10 @@ footer .copyright p {
   height: 44px;
   padding: 10px 15px;
   vertical-align: middle;
+}
+.table-data-contain tbody tr td.data {
+  position: relative;
+  z-index: 999;
 }
 .table-data-contain tbody tr td .wrapper {
   width: 100%;
@@ -5234,6 +5241,24 @@ footer .copyright p {
 }
 .modal-doctor .profile {
   padding: 0px !important;
+}
+
+.more-data-contain {
+  position: relative;
+  z-index: 999;
+}
+.more-data-contain .more-info {
+  z-index: 9999 !important;
+}
+.more-data-contain .more-info.active {
+  transform: translateY(0px) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.more-data-contain .show-more:hover .more-info {
+  transform: translateY(30px) !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
 }
 
 @media (max-width: 999px) {
