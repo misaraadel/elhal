@@ -75,15 +75,21 @@ $(document).ready(function () {
     });
 
     $('#thirdData').click(function(){
-        $('.more-info').toggleClass('active');
+        $('.third-data').toggleClass('active');
+        $('.first-data').removeClass('active');
+        $('.second-data').removeClass('active');
     });
 
     $('#firstData').click(function(){
-        $('.more-info').toggleClass('active');
+        $('.first-data').toggleClass('active');
+        $('.second-data').removeClass('active');
+        $('.third-data').removeClass('active');
     });
 
-    $('#firstData').click(function(){
-        $('.more-info').toggleClass('active');
+    $('#secondData').click(function(){
+        $('.second-data').toggleClass('active');
+        $('.first-data').removeClass('active');
+        $('.third-data').removeClass('active');
     });
 
 
